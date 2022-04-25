@@ -14,6 +14,11 @@
     integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
     crossorigin="anonymous" />
 
+	<!-- Update these with your own fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+
     <title>Woojin Oh</title>
   </head>
 
@@ -24,11 +29,22 @@
       </button>
 
       <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">GitHub</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">LinkedIn</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Resume</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Email</a></li>
+		<ul class="nav__list">
+			<li class="nav__item">
+				<a href="https://github.com/woojinv" class="nav__link nav__link--github" target="_blank">GitHub</a>
+			</li>
+
+			<li class="nav__item">
+				<a href="https://www.linkedin.com/in/woojin-oh/" class="nav__link nav__link--linkedin" target="_blank">LinkedIn</a>
+			</li>
+
+          	<li class="nav__item">
+				  <a href="mailto:oh.woojin95@gmail.com" class="nav__link nav__link--email" target="_blank">Email</a>
+			</li>
+
+		  	<li class="nav__item">
+				  <a href="resume.pdf" class="nav__link nav__link--resume" target="_blank">Resume</a>
+			</li>
         </ul>
       </nav>
 
@@ -37,102 +53,79 @@
 
 
     <!-- About -->
-    <Section class="about">
-      <h1 class="section__header section__header--about">Woojin Oh</h1>
+    <Section class="intro">
+      <h1 class="intro__header">Woojin Oh</h1>
       <p class="brand-statement">
-        I strive to ask the right questions, see the bigger picture, and identify what matters most. 
+        I strive to <strong>ask</strong> the right questions,<br> <strong>see</strong> the bigger picture,<br> and <strong>identify</strong> what matters most. 
       </p>
-      <div class="skills">
-        <h2 class="skills__header">Skills</h2>
-        <ul class="skills__list">
-          <li class="skill">
-            React
-          </li>
-          <li class="skill">
-            Node.js / Express
-          </li>
-          <li class="skill">
-            MongoDB / Mongoose
-          </li>
-          <li class="skill">
-            JavaScript / CSS / HTML
-          </li>
-          <li class="skill">
-            Python / Django
-          </li>
-        </ul>
-    </Section>
+	  <img src="https://i.imgur.com/Q6vd7Ff.jpg" alt="picture of Woojin smiling" class="intro__img">
+	</Section>  
+
+
+	<!-- Skills -->
+	<Section class="skills">
+		<h2 class="section__header section__header--skills">Skills</h2>
+		<ul class="skills__list">
+			<li class="skill">
+				React
+			</li>
+			<li class="skill">
+				Node.js / Express
+			</li>
+			<li class="skill">
+				MongoDB / Mongoose
+			</li>
+			<li class="skill">
+				JavaScript / CSS / HTML
+			</li>
+			<li class="skill">
+				Python / Django
+			</li>
+		</ul>
+	</Section>
+      
     
-
-
+	<!-- Projects -->
     <Section class="projects">
-      <h1 class="section__header section__header--projects"></h1>
-      <div class="project">
-        <h3 class="project__header"></h3>
+      <h2 class="section__header section__header--projects">Projects</h1>
 
+		<!-- Project 4-->
+      <!-- <div class="project">
+        <h3 class="project__header">Project 4</h3>
+		<a href="https://ga-budget-tracker.herokuapp.com/home" target="_blank">
+			<img class="project__img project__img--budget-tracker" src="https://i.imgur.com/FdbKpjA.png" alt="">
+		</a>
+      </div> -->
+
+	  <!-- Project 3-->
+      <!-- <div class="project">
+        <h3 class="project__header">Project 3</h3>
+		<a href="https://ga-budget-tracker.herokuapp.com/home" target="_blank">
+			<img class="project__img project__img--budget-tracker" src="https://i.imgur.com/FdbKpjA.png" alt="">
+		</a>
+      </div> -->
+	  
+	  <!-- Budget Tracker -->
+      <div class="project">
+        <h3 class="project__header">Budget Tracker</h3>
+		<a href="https://ga-budget-tracker.herokuapp.com/home" target="_blank">
+			<img class="project__img project__img--budget-tracker" src="https://i.imgur.com/FdbKpjA.png" alt="">
+		</a>
+      </div>
+
+	  <!-- Connect Four -->
+      <div class="project">
+        <h3 class="project__header">Connect Four</h3>
+		<a href="https://woojinv.github.io/Connect-Four/" target="_blank">
+			<img class="project__img project__img--budget-tracker" src="https://i.imgur.com/haqSL0D.jpg" alt="">
+		</a>
       </div>
 
     </Section>
-
-    
-      <h2>Projects</h2>
-        <div class="Project 1">
-
-          <a href="https://ga-budget-tracker.herokuapp.com/home">Budget Tracker</a>
-          </br>
-
-          <a href="https://github.com/woojinv/GA-Project-2-Budget-Tracker">GitHub</a>
-
-          <p>Languages Used: MongoDB and Mongoose, Express, Node.js, Bootstrap, OAuth, Google People API, Atlas, Heroku, JavaScript, CSS, HTML, EJS Templates</p>
-          
-          <ul>
-            <li>
-              Constructed a web server using Node.js and Express with data hosted on MongoDB Atlas
-            </li>
-            <li>
-              Modeled data using Mongoose ODM and deployed to Heroku
-            </li>
-            <li>
-              Implemented OAuth and Authentication with Passport using Google’s People API
-            </li>
-            <li>
-              Styled and Formatted using JS, EJS, Bootstrap, CSS, and HTML
-            </li>
-          </ul> 
-        </div>  
-
-
-        <div class="Project 2">
-
-          <a href="https://woojinv.github.io/CONNECT-4/">Connect Four</a>
-
-        </br>
-          <a href="https://github.com/woojinv/CONNECT-4">GitHub</a>
-
-          <p>Languages Used: JavaScript, CSS, HTML</p>
-
-          <ul>
-            <li>
-              Manipulated Vanilla JavaScript arrays and objects, the Document Object Model, event listeners, loops, and callback functions to add interactivity and immersiveness to the web-page.
-            </li>
-            <li>
-              Styled using CSS Grid and Flexbox to improve presentability and ease of use. 
-            </li>
-            <li>
-              Deployed web-page to GitHub Pages and utilized Git for version control. 
-            </li>
-          </ul>
-        </div>
-
-
-
-
-
-
     <footer class="footer">
-      <a href="mailto:oh.woojin95@gmail.com" class="footer__link"
-        >oh.woojin95@gmail.com</a
-      >
+		<a href="https://github.com/woojinv" class="nav__link nav__link--github" target="_blank">GitHub</a>
+		<a href="https://www.linkedin.com/in/woojin-oh/" class="nav__link nav__link--linkedin" target="_blank">LinkedIn</a>
+		<a href="mailto:oh.woojin95@gmail.com" class="footer__link">Email</a>
     </footer>
   </body>
 </html>
