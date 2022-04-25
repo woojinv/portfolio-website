@@ -17,7 +17,7 @@
     --clr-dark: #303030;
     --clr-accent: #cdedf6;
 
-    --fs-h1: 3rem;
+    --fs-h1: 4rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
@@ -76,13 +76,18 @@ h3 { font-size: var(--fs-h3); }
 
 .intro__header {
     margin-bottom: .25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .brand-statement {
-    margin: 0;
+    margin: 0 auto;
     font-size: var(--fs-h3);
     background: var(--clr-accent);
-    margin-bottom: 1em;
+    margin-top: 1em;
+    max-width: 330px;
+    padding: .5em;
 }
 
 
@@ -97,16 +102,39 @@ nav { display: none }
     position: relative;
 }
 
+.intro__img {
+    align-self:center;
+    margin: 0 auto;
+}
+
+
+
+
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
         grid-template-areas:
-            "img title"
-            "img subtitle";
+            "header img"
+            "brand-statement img";
         grid-template-columns: min-content max-content;
     }
 
+    .intro__header {
+        grid-area: header;
+        min-width: 330px;
+        margin-bottom: 0;
+    }
+
     .intro__img {
-        
+        grid-area: img;
+        /* min-width: 250px; */
+    }
+
+    .brand-statement {
+        margin: auto;
     }
 }
